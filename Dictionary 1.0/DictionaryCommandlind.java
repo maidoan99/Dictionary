@@ -1,6 +1,6 @@
 public class DictionaryCommandlind {
     public static void showAllWords(){
-        System.out.println("No  |English            |Vietnamese");
+        System.out.println("No\t|English\t\t\t\t|Vietnamese");
 
         int numOfWord = Dictionary.words.size();
 
@@ -11,7 +11,7 @@ public class DictionaryCommandlind {
             word_target = Dictionary.words.get(i).getWord_target();
             word_explain = Dictionary.words.get(i).getWord_explain();
 
-            System.out.println((i+1) + "    " + word_target + "                 " + word_explain);
+            System.out.println((i+1) + "\t" + word_target + "\t\t\t" + word_explain);
         }
     }
 

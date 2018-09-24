@@ -6,6 +6,7 @@ public class DictionaryManagement {
 
         System.out.println("Nhap vao so luong tu: ");
         int numOfWord = scan.nextInt();
+        scan.nextLine(); //nhap dau Enter thưa de chong troi lenh
 
         for(int i = 0; i < numOfWord; i++){
 
