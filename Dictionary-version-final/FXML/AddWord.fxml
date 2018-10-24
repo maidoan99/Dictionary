@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAddWord">
+    <children>
+        <HBox layoutX="3.0" prefHeight="117.0" prefWidth="753.0" style="-fx-background-color: #003366;">
+            <children>
+                <ImageView fitHeight="143.0" fitWidth="307.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/facebook_cover_photo_1.png" />
+                    </image>
+                </ImageView>
+            </children></HBox>
+        <Label layoutX="20.0" layoutY="198.0" prefHeight="28.0" prefWidth="109.0" text="Target word">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <Label layoutX="20.0" layoutY="250.0" prefHeight="28.0" prefWidth="103.0" text="Explain word">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <TextField fx:id="target" layoutX="136.0" layoutY="195.0" prefHeight="34.0" prefWidth="600.0" promptText="Target" />
+        <Button fx:id="add1" layoutX="613.0" layoutY="470.0" mnemonicParsing="false" onAction="#add" text="Add" />
+        <Button fx:id="cancel" layoutX="671.0" layoutY="470.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+        <HTMLEditor fx:id="explain" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="136.0" layoutY="250.0" prefHeight="200.0" prefWidth="587.0" />
+    </children>
+</AnchorPane>

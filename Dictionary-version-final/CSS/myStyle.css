@@ -1,0 +1,31 @@
+.hower_border:hover{
+    -fx-background-color: #0091ea;
+    -fx-border-color: #0091ea;
+    -fx-border-width:0px 0px 0px 5px;
+    -fx-cursor: hand;
+}
+.cursor_hand{
+    -fx-cursor: hand;
+}
+.list-cell{
+    -fx-background-color: #ffffff;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #0288D1;
+    -fx-text-fill: white;
+}
+.list-view {
+    -fx-background-color: transparent;
+}
+.list-cell:filled:hover {
+    -fx-background-color: #039BE5;
+    -fx-text-fill: white;
+}
+.list-cell {
+    -fx-text-fill: black;
+}
+.button {
+    -fx-background-color: transparent;
+}
+

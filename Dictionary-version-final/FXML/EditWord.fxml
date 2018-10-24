@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerEditWord">
+    <children>
+        <HBox layoutX="1.0" prefHeight="118.0" prefWidth="753.0" style="-fx-background-color: #003366;">
+            <children>
+                <ImageView fitHeight="143.0" fitWidth="307.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/facebook_cover_photo_1.png" />
+                    </image>
+                </ImageView>
+            </children></HBox>
+        <Label layoutX="36.0" layoutY="173.0" prefHeight="28.0" prefWidth="99.0" text="Target word" textFill="#000077">
+            <font>
+                <Font name=".VnArial Bold Italic" size="16.0" />
+            </font></Label>
+        <Label layoutX="33.0" layoutY="228.0" prefHeight="34.0" prefWidth="106.0" text="Explain word" textFill="#000077">
+            <font>
+                <Font name=".VnArial Bold Italic" size="16.0" />
+            </font></Label>
+        <TextField fx:id="target" layoutX="145.0" layoutY="173.0" prefHeight="34.0" prefWidth="488.0" promptText="Target" />
+        <Button fx:id="edit1" layoutX="471.0" layoutY="454.0" mnemonicParsing="false" onAction="#update" prefHeight="28.0" prefWidth="68.0" text="Update" textFill="#000077">
+            <font>
+                <Font name="Times New Roman Bold" size="14.0" />
+            </font></Button>
+        <Button fx:id="cancel" layoutX="565.0" layoutY="454.0" mnemonicParsing="false" onAction="#cancel" prefHeight="28.0" prefWidth="68.0" text="Cancel" textFill="#000077">
+            <font>
+                <Font name="Times New Roman Bold" size="14.0" />
+            </font>
+        </Button>
+        <HTMLEditor fx:id="explain" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="145.0" layoutY="228.0" prefHeight="205.0" prefWidth="488.0" />
+    </children>
+</AnchorPane>
